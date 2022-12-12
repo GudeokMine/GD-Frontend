@@ -1,0 +1,36 @@
+.header-wrap {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 55px;
+    background-color: #101010;
+    color: white;
+    display: flex;
+
+    div {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Mine-Reg';
+        padding-top: 5px;
+    }
+
+    .title {
+        margin-right: auto;
+        margin-left: 25px;
+        font-size: 26px;
+
+        .title-text {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .user-in {
+        margin-left: auto;
+        font-size: 20px;
+        margin-right: 25px;
+        cursor: default;
+    }
+}

@@ -70,17 +70,26 @@
                     text-align: center;
                 }
             }
+        }
 
-            .submit {
-                border: none;
-                background-color: white;
-                color: black;
-                font-size: 14px;
-                width: 45px;
-                height: 28px;
-                border-radius: 4px;
-                margin-left: 10px;
-            }
+        .submit {
+            border: none;
+            background-color: white;
+            color: black;
+            font-size: 15px;
+            width: 140px;
+            height: 28px;
+            cursor: pointer;
+            border-radius: 1000px;
+            margin-left: 10px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: 'Mine-Reg';
+            padding-top: 5px;
+            letter-spacing: 1.5px;
         }
 
         button {

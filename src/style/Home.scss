@@ -26,6 +26,19 @@
             align-items: center;
             margin-top: 15px;
 
+            .select-wrap {
+                border: none;
+
+                select {
+                    outline: none;
+                    background-color: transparent;
+                    border: none;
+                    color: white;
+                    font-weight: 800;
+                    font-size: 14px;
+                }
+            }
+
             div {
                 width: fit-content;
                 height: 30px;
@@ -105,5 +118,30 @@
         span {
             margin-left: 10px;
         }
+    }
+}
+
+.pin-wrap {
+    height: 60px;
+
+    .pin-input {
+        margin-top: 15px;
+        border: none;
+        border-bottom: 2px solid white;
+        outline: none;
+        background-color: transparent;
+        color: white;
+        font-weight: 800;
+        text-align: center;
+        font-size: 18px;
+        width: 70px;
+
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+
+    button {
+        margin-left: 10px;
     }
 }

@@ -9,9 +9,8 @@ const Header = () => {
     const countOnlineUser = () => {
         axios.get('https://gdmine.kro.kr:1211/mcServer')
             .then((res) => {
-                if (onlineUser !== res.data.msg) {
+                if (onlineUser !== res.data.msg)
                     setOnlineUser(res.data.msg)
-                }
                 return;
             })
             .catch((err) => {

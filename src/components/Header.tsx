@@ -2,6 +2,9 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/Header.scss';
+import { FiDownload } from "react-icons/fi";
+import { SiDiscord } from "react-icons/si";
+import { AiFillGithub } from "react-icons/ai";
 
 const Header = () => {
     const [onlineUser, setOnlineUser] = useState(0);
@@ -29,8 +32,15 @@ const Header = () => {
             <div className='title'>
                 <Link to='/' className='title-text'>minecraft</Link>
             </div>
-            <div className='user-in'>
-                <span>{onlineUser} users in server</span>
+            <div>
+                <a href='https://discord.gg/WtdxfdFcGT' target="_blank">
+                    <SiDiscord className='discord' size='25'></SiDiscord>
+                </a>
+                <FiDownload className='filedownload' size='24'/>
+                <a href='https://github.com/GudeokMine' target="_blank"><AiFillGithub className='github' size='25'/></a>
+                <div className='user-in'>
+                    <span>{onlineUser} users in server</span>
+                </div>
             </div>
         </div>
     );

@@ -33,10 +33,10 @@ const Header = () => {
                 <Link to='/' className='title-text'>minecraft</Link>
             </div>
             <div>
+                <FiDownload className='filedownload' size='24'/>
                 <a href='https://discord.gg/WtdxfdFcGT' target="_blank">
                     <SiDiscord className='discord' size='25'></SiDiscord>
                 </a>
-                <FiDownload className='filedownload' size='24'/>
                 <a href='https://github.com/GudeokMine' target="_blank"><AiFillGithub className='github' size='25'/></a>
                 <div className='user-in'>
                     <span>{onlineUser} users in server</span>
